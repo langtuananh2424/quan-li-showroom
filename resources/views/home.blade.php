@@ -16,9 +16,9 @@
   <section class="banner">
     <img src="images/banner-1.png" alt="Banner">
     <div class="banner-controls">
-      <img src="images/Arrow left-circle.png" alt="Arrow-left">
+      <img src="icons/Arrow left-circle.png" alt="Arrow-left">
       <span>1/2</span>
-      <img src="images/Arrow right-circle.png" alt="Arrow-right">
+      <img src="icons/Arrow right-circle.png" alt="Arrow-right">
     </div>
   </section>
   <section class="banner">
@@ -53,7 +53,7 @@
   <section class="news">
     <h2>Tin tức về xe</h2>
     <div class="news-list">
-    <img src="images/Chevron left.png" alt="">
+    <img src="icons/Chevron left.png" alt="">
       <div class="news-item">
         <img src="images/news1.png" alt="">
         <h4>Biển số xe 34 tỉnh thành sau khi sáp nhập</h4>
@@ -69,7 +69,7 @@
         <h4>5 mẫu xe ô tô cao cấp đáng mua nhất 2025</h4>
         <p>Xe ô tô cao cấp đáng mua nhất...</p>
       </div>
-      <img src="images/Chevron right.png" alt="">
+      <img src="icons/Chevron right.png" alt="">
     </div>
   </section>
 
@@ -81,9 +81,9 @@
     <div class="footer-contact">
       <span>Hotline: <span class="hotline">0987654321</span></span>
       <div class="footer-social">
-        <img src="images/fb.png" alt="">
-        <img src="images/ig.png" alt="">
-        <img src="images/yt.png" alt="">
+        <img src="icons/fb.png" alt="">
+        <img src="icons/ig.png" alt="">
+        <img src="icons/yt.png" alt="">
       </div>
     </div>
     <div class="footer-cars">

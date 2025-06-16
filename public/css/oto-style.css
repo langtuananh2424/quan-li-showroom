@@ -1,0 +1,232 @@
+/* oto-style.css - Custom style cho trang Ô tô */
+html, body {
+  min-height: 1080px;
+  height: 1080px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 1080px;
+  height: 1080px;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+  max-height: 1080px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 32px;
+    background: #F9F9F9;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    font-weight: bold;
+}
+.oto-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 18px 0 10px 0;
+}
+.oto-title-left {
+  width: 168px;
+  height: 1.2px;
+  background: #666;
+  border: none;
+  margin-left: min(100px, 8vw);
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+.oto-title-right {
+  width: 1428px;
+  height: 1.2px;
+  background: #666;
+  border: none;
+  margin-right: min(100px, 8vw);
+  margin-left: 18px;
+  flex-shrink: 0;
+}
+.oto-title span {
+  white-space: nowrap;
+}
+.oto-cars {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 48px;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
+}
+.oto-car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 32px;
+}
+.oto-car img {
+  width: 90%;
+  max-width: 260px;
+  height: auto;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+.oto-car-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.oto-car-btn {
+  width: 100%;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+.oto-car-btn:hover {
+  background: #d0d0d0;
+}
+.oto-footer {
+  background: #E0E0E0;
+  color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px 0 0 0;
+  flex-wrap: wrap;
+  min-height: 180px;
+  border-top: 1px solid #bbb;
+  margin-top: auto;
+}
+.oto-footer-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 700px;
+  margin-left: 145px;
+  margin-right: 0;
+}
+.oto-footer-left img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
+.oto-footer-desc {
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+.oto-footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  margin-right: 145px;
+  margin-left: 0;
+}
+.oto-footer-contact-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.oto-footer-contact-icons, .oto-footer-contact-texts {
+  display: none;
+}
+.oto-footer-contact-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+.oto-footer-contact-text {
+  text-align: right;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.oto-footer-contact .oto-hotline {
+  color: #ff2d2d;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.oto-footer-contact img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+.oto-footer-bottom {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 18px 0 8px 0;
+  font-size: 1rem;
+  border-top: 1px solid #bbb;
+  background: #E0E0E0;
+  margin: 0;
+}
+.oto-footer-line {
+  width: 100%;
+  height: 1px;
+  background: #bbb;
+  border: none;
+  margin: 18px 0 0 0;
+}
+.oto-footer-copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px 0 4px 0;
+  color: #222;
+  background: transparent;
+}
+@media (max-width: 1600px) {
+  .oto-title-right { width: 900px; }
+}
+@media (max-width: 1200px) {
+  .oto-title-right { width: 400px; }
+  .oto-title-left { width: 100px; }
+}
+@media (max-width: 1100px) {
+  .oto-footer-left { margin-left: 24px; }
+  .oto-footer-contact { margin-right: 24px; align-items: flex-end; }
+}
+@media (max-width: 700px) {
+  .oto-title-right, .oto-title-left { width: 40px; margin-left: 8px; margin-right: 8px; }
+  .oto-footer { flex-direction: column; align-items: flex-start; padding: 32px 8px 0 8px; }
+  .oto-footer-left, .oto-footer-contact { margin: 0 auto; align-items: center; }
+  .oto-footer-desc { text-align: center; }
+  .oto-footer-contact { margin-right: 0; }
+  .oto-footer-contact-row { margin-bottom: 10px; }
+  .oto-footer-contact-text, .oto-footer-contact .oto-hotline { font-size: 1.1rem; }
+}
+@media (max-width: 900px) {
+  .oto-cars { flex-direction: column; align-items: center; gap: 32px; }
+  .oto-footer { flex-direction: column; align-items: flex-start; padding: 32px 16px 0 16px; }
+  .oto-footer-left { flex-direction: row; align-items: flex-start; gap: 18px; }
+  .oto-footer-desc { text-align: left; }
+}
