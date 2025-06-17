@@ -128,32 +128,7 @@
         <div class="info-customer-text">Xe ngập nước, công ty không minh bạch. Mua một chiếc BMW cũ tại Royal Auto, quảng cáo là xe chất lượng cao nhưng khi mang đi kiểm tra thì phát hiện xe từng ngập nước. Hỏi công ty thì họ im bặt coi, họ né để không nhận dịch. Dịch vụ bảo hành không có, gọi hotline không ai hỗ trợ. Cực kỳ thất vọng và chắc chắn không khuyên ai mua ở đây!</div>
       </div>
     </div>
-    <footer class="info-footer">
-      <div class="info-footer-left">
-        <img src="images/logo-footer.png" alt="Royal Auto">
-        <div class="info-footer-desc">
-          Chuyên kinh doanh các dòng xe cũ cao cấp như Mercedes, Roll Royce, McLaren, BMW, Audi, Land Rover ... Royal Auto luôn tâm niệm chỉ mang tới khách hàng những mẫu xe chất lượng nhất, chuẩn về pháp lý, nói CÓ với xe lỗi hay xe kém chất lượng.
-        </div>
-      </div>
-      <div class="info-footer-contact">
-        <div class="info-footer-contact-row">
-          <img src="icons/Phone.png" alt="car">
-          <div class="info-footer-contact-text">Hotline: <span class="info-hotline">0987654321</span></div>
-        </div>
-        <div class="info-footer-contact-row">
-          <img src="icons/Mail.png" alt="mail">
-          <div class="info-footer-contact-text">royalauto@gmail.com</div>
-        </div>
-        <div class="info-footer-contact-row">
-          <img src="icons/Map.png" alt="location">
-          <div class="info-footer-contact-text">Hà Nội, Việt Nam</div>
-        </div>
-      </div>
-      <hr class="info-footer-line">
-      <div class="info-footer-copyright">
-        Copyright © 2025 Royal Auto. All rights reserved.
-      </div>
-    </footer>
   </div>
+  @include('layouts.footer')
 </body>
 </html>

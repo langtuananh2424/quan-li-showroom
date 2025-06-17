@@ -17,7 +17,7 @@
     <a href="/">Trang chủ</a>
     <a href="{{ route('oto') }}">Ô tô</a>
     <a href="{{ route('info')}}">Thông tin về Royal Auto</a>
-    <a href="#">Dịch vụ</a>
+    <a href="{{ route('service')}}">Dịch vụ</a>
   </nav>
   <div class="login">
     <img src="icons/User.png" alt="">

@@ -24,3 +24,11 @@ Route::get('/oto', function () {
 Route::get('/info', function() {
     return view('info');
 })->name('info');
+
+Route::get('/service', function() {
+    return view('service');
+})->name('service');
+
+Route::get('/718', function() {
+    return view('718');
+})->name('718');

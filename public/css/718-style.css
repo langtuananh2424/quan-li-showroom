@@ -1,0 +1,265 @@
+/* ========== Banner ========== */
+.oto-718-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ========== 2 Ảnh lớn (Ngoại thất/Nội thất) ========== */
+.oto-718-main {
+  display: flex;
+  gap: 24px;
+  width: 1680px;
+  max-width: 1680px;
+  margin: 32px auto 0 auto;
+}
+.oto-718-main-img, .oto-718-main-int {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+}
+.oto-718-main-img img, .oto-718-main-int img {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.oto-718-main-link {
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.oto-718-main-link a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-left: 18px;
+}
+.oto-718-main-link a:hover {
+  color: #ff2d2d;
+}
+
+/* ========== Tabs Đặc điểm nổi bật ========== */
+.oto-718-features {
+  width: 1680px;
+  max-width: 1680px;
+  margin: 48px auto 0 auto;
+}
+.oto-718-features-tabs {
+    display: flex;
+    margin-bottom: 24px;
+    padding-left: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.oto-718-features-tab {
+  padding: 10px 28px 10px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: -2px;
+}
+.oto-718-features-tab.active {
+  background: #ff2d2d;
+  color: #fff;
+  border-bottom: 2px solid #ff2d2d;
+}
+.oto-718-features-list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+.oto-718-feature {
+  background: #fafafa;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  flex: 1;
+  padding: 32px 18px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  transition: box-shadow 0.2s;
+}
+.oto-718-feature:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.oto-718-feature img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+.oto-718-feature-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 18px 18px 0 18px;
+  text-align: left;
+  min-height: 48px;
+  line-height: 1.3;
+  align-self: flex-start;
+}
+.oto-718-feature-btn {
+  margin: 18px 18px 18px 18px;
+  background: #E0E0E0;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px 10px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  align-self: flex-start;
+}
+.oto-718-feature-btn:hover {
+  background: #ff2d2d;
+  color: #fff;
+}
+
+/* ========== Bảng thông số kỹ thuật ========== */
+.oto-718-spec-table {
+  width: 1680px;
+  max-width: 1680px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 48px 32px 48px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.oto-718-spec-img {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oto-718-spec-img img {
+  width: 100%;
+  max-width: 520px;
+  object-fit: contain;
+}
+.oto-718-spec-info {
+  flex: 1;
+}
+.oto-718-spec-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.oto-718-spec-info-table {
+  width: 100%;
+  font-size: 20px;
+  border-collapse: collapse;
+}
+.oto-718-spec-info-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+.oto-718-spec-info-table tr:last-child td {
+  border-bottom: none;
+}
+.oto-718-contact-btn {
+  background: #ff2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.oto-718-contact-btn:hover {
+  background: #d81b1b;
+}
+.oto-718-all-btn {
+  margin-left: auto;
+  display: block;
+  background: #D70000;
+  color: #fff;
+  border: 1.5px solid #D70000;
+  border-radius: 3px;
+  padding: 10px 28px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.oto-718-all-btn:hover {
+  background: #ff2d2d;
+  color: #fff;
+}
+
+.oto-718-spec-info-table td a {
+  color: #ff2d2d;
+  text-decoration: none;
+}
+.oto-718-spec-info-table td a:hover {
+  color: #d81b1b;
+}
+
+/* ========== Responsive cơ bản ========== */
+@media (max-width: 1700px) {
+  .oto-718-main, .oto-718-features, .oto-718-spec-table, .oto-718-banner {
+    max-width: 98vw;
+    width: 98vw;
+  }
+}
+@media (max-width: 1100px) {
+  .oto-718-main, .oto-718-features, .oto-718-spec-table {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 8px;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .oto-718-spec-table {
+    padding: 18px 4vw;
+  }
+}
+@media (max-width: 700px) {
+  .oto-718-banner {
+    height: 180px;
+    border-radius: 0;
+  }
+  .oto-718-main-img img, .oto-718-main-int img {
+    border-radius: 6px;
+  }
+  .oto-718-feature {
+    padding: 18px 4px 12px 4px;
+  }
+  .oto-718-feature img {
+    width: 70px;
+    height: 70px;
+  }
+  .oto-718-spec-img img {
+    max-width: 90vw;
+  }
+}
+
+.oto-718-features-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  letter-spacing: 0.5px;
+}

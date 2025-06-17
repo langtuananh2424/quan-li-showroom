@@ -22,7 +22,7 @@
     <div class="oto-car">
       <img src="images/Porsche 718.png" alt="Porsche 718 Cayman S">
       <div class="oto-car-title">Porsche 718 Cayman S</div>
-      <button class="oto-car-btn">Khám phá</button>
+      <button class="oto-car-btn"><a href="{{ route('718') }}">Khám phá</a></button>
     </div>
     <div class="oto-car">
       <img src="images/Porsche 911.png" alt="Porsche 911 Carrera 4 GTS">
@@ -41,31 +41,6 @@
     </div>
   </div>
 
-  <footer class="oto-footer">
-    <div class="oto-footer-left">
-      <img src="images/logo-footer.png" alt="Royal Auto">
-      <div class="oto-footer-desc">
-        Chuyên kinh doanh các dòng xe cũ cao cấp như Mercedes, Roll Royce, McLaren, BMW, Audi, Land Rover ... Royal Auto luôn tâm niệm chỉ mang tới khách hàng những mẫu xe chất lượng nhất, chuẩn về pháp lý, nói CÓ với xe lỗi hay xe kém chất lượng.
-      </div>
-    </div>
-    <div class="oto-footer-contact">
-      <div class="oto-footer-contact-row">
-        <img src="icons/Phone.png" alt="car">
-        <div class="oto-footer-contact-text">Hotline: <span class="oto-hotline">0987654321</span></div>
-      </div>
-      <div class="oto-footer-contact-row">
-        <img src="icons/Mail.png" alt="mail">
-        <div class="oto-footer-contact-text">royalauto@gmail.com</div>
-      </div>
-      <div class="oto-footer-contact-row">
-        <img src="icons/Map.png" alt="location">
-        <div class="oto-footer-contact-text">Hà Nội, Việt Nam</div>
-      </div>
-    </div>
-    <hr class="oto-footer-line">
-    <div class="oto-footer-copyright">
-      Copyright © 2025 Royal Auto. All rights reserved.
-    </div>
-  </footer>
+  @include('layouts.footer')
 </body>
 </html>

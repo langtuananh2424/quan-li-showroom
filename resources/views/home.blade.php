@@ -15,11 +15,6 @@
   <!-- Banner -->
   <section class="banner">
     <img src="images/banner-1.png" alt="Banner">
-    <div class="banner-controls">
-      <img src="icons/Arrow left-circle.png" alt="Arrow-left">
-      <span>1/2</span>
-      <img src="icons/Arrow right-circle.png" alt="Arrow-right">
-    </div>
   </section>
   <section class="banner">
   <img src="images/banner-2.png" alt="Banner-2">
