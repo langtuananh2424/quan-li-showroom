@@ -32,3 +32,7 @@ Route::get('/service', function() {
 Route::get('/718', function() {
     return view('718');
 })->name('718');
+
+Route::get('/news', function() {
+    return view('news');
+})->name('news');

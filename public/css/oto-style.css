@@ -71,6 +71,10 @@ header {
   width: 300px;
   margin-bottom: 32px;
 }
+.oto-car a {
+  text-decoration: none;
+  color: #000;
+}
 .oto-car img {
   width: 90%;
   max-width: 260px;
