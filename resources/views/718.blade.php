@@ -51,13 +51,13 @@
   <div class="oto-718-spec-info">
     <h3>Thông số kỹ thuật</h3>
     <table class="oto-718-spec-info-table">
-      <tr><td>Công suất</td><td>257kW (350 mã lực)</td></tr>
-      <tr><td>Mô men xoắn cực đại</td><td>420Nm</td></tr>
-      <tr><td>Tăng tốc từ 0 - 100 km/giờ</td><td>4,4 giây</td></tr>
-      <tr><td>Tốc độ tối đa</td><td>285 km/giờ</td></tr>
-      <tr><td>Mức tiêu thụ kết hợp</td><td>8,1 l/100km</td></tr>
-      <tr><td>Lượng khí thải CO2</td><td>184 g/km</td></tr>
-      <tr><td>Giá bán</td><td><a href="#">Liên hệ</a></td></tr>
+      <tr><td>Công suất</td><td style="text-align: right;">257kW (350 mã lực)</td></tr>
+      <tr><td>Mô men xoắn cực đại</td><td style="text-align: right;">420Nm</td></tr>
+      <tr><td>Tăng tốc từ 0 - 100 km/giờ</td><td style="text-align: right;">4,4 giây</td></tr>
+      <tr><td>Tốc độ tối đa</td><td style="text-align: right;"></td></tr>
+      <tr><td>Mức tiêu thụ kết hợp</td><td style="text-align: right;"></td></tr>
+      <tr><td>Lượng khí thải CO2</td><td style="text-align: right;"></td></tr>
+      <tr><td>Giá bán</td><td style="text-align: right;"><a href="#">Liên hệ</a></td></tr>
     </table>
     <button class="oto-718-all-btn">→ Tất cả thông số</button>
   </div>

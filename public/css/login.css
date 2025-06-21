@@ -1,0 +1,122 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+.login-main {
+    position: relative;
+    width: 100vw;
+    height: 1028px;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.login-image {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.login-form {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 4.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.login-form h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #222;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f3f3f3;
+    outline: none;
+    transition: border 0.2s;
+    width: 370px;
+    max-width: 450px;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border: 1.5px solid #b80000;
+}
+
+.login-form button {
+    padding: 12px;
+    background: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+    width: 180px;
+}
+.login-form button:hover {
+    background: #b80000;
+}
+
+@media (max-width: 900px) {
+    .login-main {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .login-form {
+        margin: 32px auto 0 auto;
+        max-width: 95vw;
+        border-radius: 18px;
+        padding: 32px 10px 24px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        padding: 22px 4vw 18px 4vw;
+    }
+    .login-form h2 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        font-size: 0.98rem;
+        padding: 10px 10px;
+    }
+    .login-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

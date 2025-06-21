@@ -36,3 +36,27 @@ Route::get('/718', function() {
 Route::get('/news', function() {
     return view('news');
 })->name('news');
+
+Route::get('/login', function() {
+    return view('login');
+})->name('login');
+
+Route::get('/quanlidanhsachoto', function() {
+    return view('quanlidanhsachoto');
+})->name('quanlidanhsachoto');
+
+Route::get('/quanlikhachhang', function() {
+    return view('quanlikhachhang');
+})->name('quanlikhachhang');
+
+Route::get('/quanlidoanhthu', function() {
+    return view('quanlidoanhthu');
+})->name('quanlidoanhthu');
+
+Route::get('/quanlinhanvien', function() {
+    return view('quanlinhanvien');
+})->name('quanlinhanvien');
+
+Route::get('/chitietkhachhang', function() {
+    return view('chitietkhachhang');
+})->name('chitietkhachhang');

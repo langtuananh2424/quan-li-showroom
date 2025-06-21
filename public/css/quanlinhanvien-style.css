@@ -1,0 +1,330 @@
+.container-oto {
+    max-width: 1920px;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 0 0 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+.oto-banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.oto-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.oto-content {
+    padding: 32px 40px 16px 40px;
+}
+.oto-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 40px 16px 40px;
+}
+.oto-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.oto-add-btn {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+    align-self: flex-end;
+}
+.oto-add-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.oto-table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.oto-table th, .oto-table td {
+    padding: 12px 8px;
+    text-align: left;
+}
+.oto-table thead th {
+    border-bottom: 2px solid #e0e0e0;
+    font-weight: 700;
+    background: #fafbfc;
+}
+.oto-table td img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+.oto-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+.oto-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+.oto-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.oto-edit img, .oto-delete img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.oto-edit img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.oto-delete img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+.oto-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 8px;
+}
+.oto-pagination span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.oto-page {
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 4px;
+    transition: color 0.2s;
+}
+.oto-page.active {
+    color: #FF0000;
+    font-weight: 700;
+}
+.oto-table a {
+    color: #007bff;
+    padding: 2px 8px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+.oto-table a:hover {
+    color: #0056b3;
+    background: #e0e6f7;
+    text-decoration: underline;
+}
+/* Popup Thêm Nhân Viên - Layout mới */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 36px 24px 36px;
+  min-width: 900px;
+  max-width: 1100px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  position: relative;
+}
+.popup-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #6B6464;
+}
+.popup-form {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+}
+.popup-left {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 24px;
+}
+.popup-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+.popup-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.popup-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.popup-row {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+.popup-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.popup-field label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #6B6464;
+}
+.popup-field input,
+.popup-field select {
+  padding: 10px 14px;
+  border: 1.5px solid #d1d1d1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #faf9f9;
+  margin-bottom: 0;
+}
+.popup-field input:focus,
+.popup-field select:focus {
+  border-color: #007bff;
+}
+.popup-field select {
+  appearance: none;
+  background: #faf9f9 url('data:image/svg+xml;utf8,<svg fill="gray" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 12px center/18px 18px;
+}
+.popup-row .popup-field[style*="flex:1"] input {
+  width: 100%;
+}
+/* Địa chỉ thường trú chiếm gần hết chiều rộng */
+.popup-row .popup-field[style*="flex:1"] {
+  flex: 3;
+}
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  margin-top: 24px;
+  width: 100%;
+}
+.popup-cancel {
+  background: #fff;
+  color: #FF0000;
+  border: 2px solid #FF0000;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.popup-cancel:hover {
+  background: #ffeaea;
+}
+.popup-submit {
+  background: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 8px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.popup-submit:hover {
+  background: #eaf2ff;
+}
+@media (max-width: 1100px) {
+  .popup-content { min-width: 90vw; }
+}
+@media (max-width: 700px) {
+  .popup-content { min-width: 98vw; padding: 12px; }
+  .popup-form { flex-direction: column; gap: 8px; }
+  .popup-left { margin: 0 auto 12px auto; align-items: center; }
+  .popup-right { gap: 8px; }
+}
+
+/* Popup Delete Confirmation */
+.popup-content.popup-delete {
+  min-width: 450px;
+  max-width: 550px; /* Tăng kích thước để chứa font lớn */
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center icon and text */
+}
+
+.delete-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.delete-message {
+  font-size: 16px; /* Revert font size for this page */
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.delete-actions {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Căn giữa các nút */
+  gap: 16px;
+}
+
+.popup-cancel-delete, .popup-confirm-delete {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.popup-cancel-delete {
+  background-color: #e0e0e0; /* Background xám */
+  color: #333;             /* Chữ đen */
+}
+
+.popup-confirm-delete {
+  background-color: #ef5350; /* Background đỏ */
+  color: #fff;             /* Chữ trắng */
+}
+
+.popup-cancel-delete:hover, .popup-confirm-delete:hover {
+  opacity: 0.85;
+}

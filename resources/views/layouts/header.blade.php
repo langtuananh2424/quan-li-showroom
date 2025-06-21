@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/header-style.css') }}">
 </head>
 <header>
   <div class="logo">
@@ -20,7 +20,9 @@
     <a href="{{ route('service')}}">Dịch vụ</a>
   </nav>
   <div class="login">
-    <img src="icons/User.png" alt="">
-    <span>Đăng nhập</span>
+    <a href="{{ route('login') }}">
+      <img src="icons/User.png" alt="">
+      <span>Đăng nhập</span>
+    </a>
   </div>
 </header>

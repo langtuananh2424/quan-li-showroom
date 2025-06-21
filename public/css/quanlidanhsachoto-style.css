@@ -1,0 +1,279 @@
+.container-oto {
+    max-width: 1920px;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 0 0 10px 0;
+    font-family: 'Inter', sans-serif;
+}
+.oto-banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.oto-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.oto-content {
+    padding: 32px 40px 16px 40px;
+}
+.oto-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 40px 16px 40px;
+}
+.oto-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.oto-add-btn {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+    align-self: flex-end;
+}
+.oto-add-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.oto-table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.oto-table th, .oto-table td {
+    padding: 12px 8px;
+    text-align: center;
+}
+.oto-table thead th {
+    border-bottom: 2px solid #e0e0e0;
+    font-weight: 700;
+    background: #fafbfc;
+}
+.oto-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+.oto-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+.oto-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.oto-edit img, .oto-delete img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.oto-edit img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.oto-delete img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+.oto-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 8px;
+}
+.oto-pagination span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.oto-page {
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 4px;
+    transition: color 0.2s;
+}
+.oto-page.active {
+    color: #FF0000;
+    font-weight: 700;
+}
+
+/* Generic Popup Styles (if not already present) */
+.popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.18);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 36px 24px 36px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+.popup-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #6B6464;
+}
+
+/* Popup Thêm ô tô */
+.popup-content.popup-oto {
+    min-width: 800px;
+    max-width: 900px;
+}
+.popup-form-oto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.popup-row-oto {
+    display: flex;
+    gap: 24px;
+}
+.popup-field-oto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.popup-field-oto label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #6B6464;
+}
+.popup-field-oto input {
+    padding: 12px 16px;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: #faf9f9;
+}
+.popup-field-oto.with-unit input {
+    padding-right: 50px; /* Space for unit */
+}
+.popup-field-oto.with-unit span {
+    position: absolute;
+    right: 16px;
+    top: 40px; /* Adjust based on label and input height */
+    color: #6B6464;
+    font-weight: 500;
+}
+.popup-field-oto.with-icon .input-icon {
+    position: absolute;
+    right: 16px;
+    top: 40px; /* Adjust as needed */
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+.popup-actions-oto {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 24px;
+}
+.popup-cancel-oto, .popup-submit-oto {
+    border-radius: 8px;
+    padding: 10px 36px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.popup-cancel-oto {
+    background: #fff;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+}
+.popup-cancel-oto:hover {
+    background: #ffeaea;
+}
+.popup-submit-oto {
+    background: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+.popup-submit-oto:hover {
+    background: #eaf2ff;
+}
+
+/* Popup Delete Confirmation */
+.popup-content.popup-delete {
+    min-width: 450px;
+    max-width: 550px; /* Tăng kích thước để chứa font lớn */
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center icon and text */
+}
+
+.delete-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.delete-message {
+    font-size: 28px; /* Cập nhật kích thước font */
+    color: #333;
+    line-height: 1.2; /* Giảm line-height cho font lớn */
+    margin-bottom: 28px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.delete-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Căn giữa các nút */
+    gap: 16px;
+}
+
+.popup-cancel-delete, .popup-confirm-delete,
+.popup-cancel-logout, .popup-confirm-logout {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.popup-cancel-delete, .popup-cancel-logout {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.popup-confirm-delete, .popup-confirm-logout {
+    background-color: #ef5350;
+    color: #fff;
+}
+
+.popup-cancel-delete:hover, .popup-confirm-delete:hover,
+.popup-cancel-logout:hover, .popup-confirm-logout:hover {
+    opacity: 0.85;
+}
